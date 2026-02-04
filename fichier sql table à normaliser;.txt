@@ -1,0 +1,35 @@
+DROP TABLE music_school;
+
+
+CREATE TABLE music_school (
+nst_id NUMBER(10),
+nst_ref VARCHAR2(15) ,
+purchase_date DATE,
+nst_type VARCHAR2(50),
+nst_status NUMBER(1),
+stu_id NUMBER(15) ,
+stu_fname VARCHAR2(50),
+stu_lname VARCHAR2(50),
+stu_phone VARCHAR2(15),
+exam_eval CHAR(1),
+exam_text VARCHAR2(255)
+);
+
+
+INSERT INTO music_school
+VALUES(1, 'YAM-281', '15/10/2012', 'Flute', 1, 100, 'Marie', 'Langlois', '0612233665', 'A', 'Excellent');
+INSERT INTO music_school
+VALUES(5, '123Y12', '06/11/1984', 'Violin', 0, 100, 'Marie', 'Langlois', '0612233665', 'B', 'Good work');
+INSERT INTO music_school
+VALUES(7, '321YT21', '06/11/1984', 'Violin', 0, 102, 'Eric', 'Langlois', '0612233665', 'B', 'Good work');
+INSERT INTO music_school
+VALUES(2, '456-ZDV', '10/03/2022', 'Trombone', 1, 101, 'Paul', 'Lenormand', '0622133665', 'B', 'Very nice quality of sound');
+INSERT INTO music_school
+VALUES(3, 'YAM-388', '15/10/2020', 'Flute', 1, 105, 'Jude', 'Fofana', '0712233665', 'A', 'Nice musicality');
+INSERT INTO music_school
+VALUES(4, 'BC-388Z', '10/10/2020', 'Clarinet', 1, 104, 'Mateo', 'Lefebvre', '0799233665', NULL, NULL);
+INSERT INTO music_school
+VALUES(6, '456987', '10/06/2023', 'Harp', 1, 106, 'Luna', 'Leroy', '0711233665', 'C', NULL);
+commit;
+
+SELECT * FROM Music_school;
